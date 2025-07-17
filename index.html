@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Assignment 2</title>
   <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/26f075e1f1.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <main>
@@ -31,9 +32,23 @@
         </div>
       </div>
     </section>
+    <section class="objective3">
+      <h2 class="objective3-header">Objective 3: To-Do List</h2>
+      <div id="todo-container">
+        <input type="text" class="input-field" id="todo-input" placeholder="Add a new task...">
+        <button id="add-btn" onclick="addTodo()">Add Task</button>
+      </div>
+      <div>
+        <h2 class="todo-header">To Do List: </h2>
+        <ol id="todo-list">
+          <li class="todo-item">Texting text field <i class="fa-solid fa-circle-check" style="color: #faf600; margin-left: 5px;"></i> <i class="fa-solid fa-trash" style="color: #f63737; margin-left: 5px;"></i></li>
+          <!-- To-Do items will be added here -->
+        </ul>
+      </div>
   </main>
 
   <script src="./task1.js"></script>
   <script src="./task2.js"></script>
+  <script src="./task3.js"></script>
 </body>
 </html>
