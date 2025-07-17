@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.objective1, .objective2 {
+    width:full;
+    height:400px;
+    padding: 100px 0;
+}
+
+/* -----------------------> Fortune generator <------------------------------ */
+.objective1-header, objective2-header {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #444;
+    font-weight: bold;
+}
+
+#fortune-box {
+    border: 2px solid #3f3f3f;
+    background-color: #fff;
+    display: inline-block;
+    margin-bottom: 10px;
+    width: 650px;
+    height: 60px;
+    border-radius: 10px;
+    padding-top: 35px;
+    text-align: center;
+}
+.buttons-container, .stopwatch-controls {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+button {
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.btn1, #start-btn {
+    background-color: #3583f7;
+    color: white;
+}
+.btn2, #stop-btn {
+    background-color: #f7a835;
+    color: white;
+}
+.btn3, #reset-btn {
+    background-color: #f73535;
+    color: white;
+}
+.btn4 {
+    background-color: #35f735;
+    color: white;
+}
+button:hover {
+    background-color: #555;
+}
+
+
+#stopwatch-display {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 6px solid #222;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 20px auto;
+  position: relative;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
