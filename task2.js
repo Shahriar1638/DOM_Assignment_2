@@ -22,8 +22,7 @@ function startTimer() {
         }
         updateDisplay();
     }, 3000);
-    }
-}
+}}
 
 function stopTimer() {
     clearInterval(interval);
@@ -35,9 +34,5 @@ function resetTimer() {
     time = 0;
     updateDisplay();
 }
-
-startBtn.addEventListener('click', startTimer);
-stopBtn.addEventListener('click', stopTimer);
-resetBtn.addEventListener('click', resetTimer);
 
 updateDisplay();
