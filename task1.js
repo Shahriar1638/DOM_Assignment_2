@@ -18,23 +18,39 @@ function pickRandomIndex(arr) {
 window.addEventListener('DOMContentLoaded', () => {
     const box = document.getElementById('fortune-box');
     box.textContent = pickRandomIndex(fortunes);
+    document.getElementById('font-color-btn').click();
+    document.getElementById('bg-color-btn').click();
+    document.getElementById('border-color-btn').click();
+    document.getElementById('font-style-btn').click();
 });
 
 document.getElementById('font-color-btn').addEventListener('click', () => {
     const colors = ['#e74c3c', '#2c3e50', '#16a085', '#8e44ad', '#d35400'];
     document.getElementById('fortune-box').style.color = pickRandomIndex(colors);
+    document.getElementById('font-color-btn').click();
+    document.getElementById('bg-color-btn').click();
+    document.getElementById('border-color-btn').click();
+    document.getElementById('font-style-btn').click();
 });
 
 
 document.getElementById('bg-color-btn').addEventListener('click', () => {
     const colors = ['#ecf0f1', '#f9e79f', '#aed6f1', '#f5b7b1', '#d5f5e3'];
     document.getElementById('fortune-box').style.backgroundColor = pickRandomIndex(colors);
+    document.getElementById('font-color-btn').click();
+    document.getElementById('bg-color-btn').click();
+    document.getElementById('border-color-btn').click();
+    document.getElementById('font-style-btn').click();
 });
 
 
 document.getElementById('border-color-btn').addEventListener('click', () => {
     const colors = ['#c0392b', '#2980b9', '#27ae60', '#7d3c98', '#f1c40f'];
     document.getElementById('fortune-box').style.borderColor = pickRandomIndex(colors);
+    document.getElementById('font-color-btn').click();
+    document.getElementById('bg-color-btn').click();
+    document.getElementById('border-color-btn').click();
+    document.getElementById('font-style-btn').click();
 });
 
 document.getElementById('font-style-btn').addEventListener('click', () => {
@@ -43,4 +59,8 @@ document.getElementById('font-style-btn').addEventListener('click', () => {
     const box = document.getElementById('fortune-box');
     box.style.fontFamily = pickRandomIndex(fonts);
     box.style.fontSize = pickRandomIndex(sizes);
+    document.getElementById('font-color-btn').click();
+    document.getElementById('bg-color-btn').click();
+    document.getElementById('border-color-btn').click();
+    document.getElementById('font-style-btn').click();
 });
