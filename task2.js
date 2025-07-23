@@ -7,11 +7,14 @@ const stopBtn = document.getElementById('stop-btn');
 const resetBtn = document.getElementById('reset-btn');
 
 function updateDisplay() {
-    display.textContent = time;
+    if (time %3 == 0){
+        display.textContent = time;
+    }
 }
 
 function startTimer() {
-    console.log('Start button clicked');
+    time=0;
+    updateDisplay();
     if (interval === null && time < 30) {
     interval = setInterval(() => {
         time += 3;
@@ -21,12 +24,13 @@ function startTimer() {
         interval = null;
         }
         updateDisplay();
-    }, 3000);
+    }, 1000);
 }}
 
 function stopTimer() {
     clearInterval(interval);
     interval = null;
+    
 }
 
 function resetTimer() {
