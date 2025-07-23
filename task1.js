@@ -23,8 +23,8 @@ window.addEventListener('DOMContentLoaded', () => {
 document.getElementsByClassName('btn1')[0].addEventListener('click', () => {
     console.log("clicked")
     document.getElementById('fortune-box').style.color = '#ffffffff'
-    document.getElementById('fortune-box').style.backgroundColor = '#8e44ad'
-    document.getElementById('fortune-box').style.borderColor = '#d35400'
+    document.getElementById('fortune-box').style.backgroundColor = '#cc6d2eff'
+    document.getElementById('fortune-box').style.borderColor = '#d300c8ff'
     document.getElementById('fortune-box').style.fontFamily = '"Lucida Console", monospace';
     document.getElementById('fortune-box').style.fontSize = '18px';
 });
